@@ -18,4 +18,9 @@ public class StudentServiceImpl implements StudentService {
         List<Student> studentList = dao.selectAllStudent();
         return studentList;
     }
+
+    @Override
+    public void addStudent(Student student) {
+        dao.addStudent(student);
+    }
 }
